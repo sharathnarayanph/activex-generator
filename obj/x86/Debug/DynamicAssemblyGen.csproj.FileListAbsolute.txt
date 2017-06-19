@@ -1,2 +1,0 @@
-C:\Tyndora-Desktop\TIM\ActiveXExamples\DotNetSamples\csharp\RoslynCompileSample\bin\Debug\ConsoleApplication.exe.config
-C:\Tyndora-Desktop\TIM\ActiveXExamples\DotNetSamples\csharp\RoslynCompileSample\obj\x86\Debug\DynamicAssemblyGen.csprojResolveAssemblyReference.cache
