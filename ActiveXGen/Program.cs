@@ -38,6 +38,7 @@ namespace ActiveXGen
             {
                 MetadataReference.CreateFromFile(typeof(object).Assembly.Location),
                 MetadataReference.CreateFromFile(typeof(Enumerable).Assembly.Location),
+                //Add required DLLs
                 MetadataReference.CreateFromFile("C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.5\\System.Windows.Forms.dll")
             };
 
@@ -45,11 +46,11 @@ namespace ActiveXGen
                 assemblyName,
                 syntaxTrees: new[] { syntaxTree },
                 references: references,
-                options: new CSharpCompilationOptions(OutputKind.WindowsApplication));
+                options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
 
             using (var ms = new MemoryStream())
             {                
-                EmitResult result1 = compilation.Emit(@"C:\Tyndora-Desktop\TIM\ActiveX\SampleDLL\" + assemblyName);
+                //EmitResult result1 = compilation.Emit(@"C:\Tyndora-Desktop\TIM\ActiveX\SampleDLL\" + assemblyName);
                 EmitResult result = compilation.Emit(ms);
 
                 if (!result.Success)
@@ -65,16 +66,7 @@ namespace ActiveXGen
                 }
                 else
                 {
-                    //ms.Seek(0, SeekOrigin.Begin);
-                    //Assembly assembly = Assembly.Load(ms.ToArray());
-
-                    //Type type = assembly.GetType("RoslynCompileSample.Writer");
-                    //object obj = Activator.CreateInstance(type);
-                    //type.InvokeMember("Write",
-                    //    BindingFlags.Default | BindingFlags.InvokeMethod,
-                    //    null,
-                    //    obj,
-                    //    new object[] { "Hello World" });
+                    //Send Response.ContentType as application/x-msdownload after converting from memory stream
                 }
             }
 

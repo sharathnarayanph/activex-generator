@@ -18,3 +18,4 @@ C:\Tyndora-Desktop\Hustle\ProjectHustle\RoslynCompileSample\ActiveXGen\obj\Debug
 C:\Tyndora-Desktop\Hustle\ProjectHustle\ActiveXGen\ActiveXGen\bin\Debug\ActiveXGen.exe.config
 C:\Tyndora-Desktop\Hustle\ProjectHustle\ActiveXGen\ActiveXGen\obj\Debug\ActiveXGen.exe
 C:\Tyndora-Desktop\Hustle\ProjectHustle\ActiveXGen\ActiveXGen\obj\Debug\ActiveXGen.pdb
+C:\Tyndora-Desktop\Hustle\ProjectHustle\ActiveXGen\ActiveXGen\obj\Debug\ActiveXGen.csprojResolveAssemblyReference.cache
